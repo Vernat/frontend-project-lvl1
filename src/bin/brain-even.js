@@ -11,4 +11,7 @@ sayWelcome();
 showBrainEvenRulesInfo();
 const userName = askUserName();
 showUserName(userName);
-runBrainEvenGame(userName);
+
+const questionCount = 3;
+const maxValue = 100;
+runBrainEvenGame(userName, questionCount, maxValue);

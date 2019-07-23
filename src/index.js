@@ -14,11 +14,11 @@ export const askUserName = () => readlineSync.question('May I have your name? ')
 
 const getRandomInt = max => Math.floor(Math.random() * Math.floor(max));
 
-export const runBrainEvenGame = (userName) => {
+export const runBrainEvenGame = (userName, questionCount, maxValue) => {
   let questionsCounter = 0;
   let userFailed = false;
-  while (questionsCounter < 3 && !userFailed) {
-    const randomValue = getRandomInt(100);
+  while (questionsCounter < questionCount && !userFailed) {
+    const randomValue = getRandomInt(maxValue);
     const correctAnswer = randomValue % 2 === 0 ? 'yes' : 'no';
     const usersAnswer = readlineSync.question(`Question ${randomValue} `);
     if (usersAnswer === correctAnswer) {
