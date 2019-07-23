@@ -13,3 +13,11 @@ This repository is created as an educational project from Hexlet. [Read more abo
 ```sh
 $ make install
 ```
+
+## Run
+
+```sh
+$ make start
+```
+
+[![asciicast](https://asciinema.org/a/clhRvOhQstwmF4E9LjhvAjQJr.svg)](https://asciinema.org/a/clhRvOhQstwmF4E9LjhvAjQJr)
