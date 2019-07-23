@@ -14,10 +14,28 @@ This repository is created as an educational project from Hexlet. [Read more abo
 $ make install
 ```
 
-## Run
+## Run BrainEven
 
 ```sh
-$ make start
+$ make publish
+$ brain-even
 ```
+[![asciicast](https://asciinema.org/a/D4JfY4Ebn3dF1Nz8FLMMd55iI.svg)](https://asciinema.org/a/D4JfY4Ebn3dF1Nz8FLMMd55iI)
 
-[![asciicast](https://asciinema.org/a/qrVaW5LP7caiab18iSk4INwKO.svg)](https://asciinema.org/a/qrVaW5LP7caiab18iSk4INwKO)
+
+## Run BrainCalc
+
+```sh
+$ make publish
+$ brain-calc
+```
+[![asciicast](https://asciinema.org/a/LwWHAe9hiG5N8LqjGn3sq5JN0.svg)](https://asciinema.org/a/LwWHAe9hiG5N8LqjGn3sq5JN0)
+
+
+## Run BrainGcd
+
+```sh
+$ make publish
+$ brain-gcd
+```
+[![asciicast](https://asciinema.org/a/HTqmsIEvsgaH4CCL75ivOZET1.svg)](https://asciinema.org/a/HTqmsIEvsgaH4CCL75ivOZET1)
