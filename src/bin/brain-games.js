@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-import { askName, sayWelcome } from '..';
+import { askUserName, sayWelcome, showUserName } from '..';
 
 sayWelcome();
-askName();
+const userName = askUserName();
+showUserName(userName);
