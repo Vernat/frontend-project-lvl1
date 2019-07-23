@@ -5,10 +5,10 @@ import {
   sayWelcome,
   showBrainEvenRulesInfo,
 } from '..';
-import { runBrainGame, brainEvenRound } from '../games/games';
+import { runBrainGame, brainCalcRound } from '../games/games';
 
 sayWelcome();
 showBrainEvenRulesInfo();
 const userName = askUserName();
 showUserName(userName);
-runBrainGame(userName, brainEvenRound);
+runBrainGame(userName, brainCalcRound);

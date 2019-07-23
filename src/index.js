@@ -11,25 +11,3 @@ export const showBrainEvenRulesInfo = () => {
 export const showUserName = name => console.log(`Hello ${name}`);
 
 export const askUserName = () => readlineSync.question('May I have your name? ');
-
-const getRandomInt = max => Math.floor(Math.random() * Math.floor(max));
-
-export const runBrainEvenGame = (userName, questionCount, maxValue) => {
-  let questionsCounter = 0;
-  let userFailed = false;
-  while (questionsCounter < questionCount && !userFailed) {
-    const randomValue = getRandomInt(maxValue);
-    const correctAnswer = randomValue % 2 === 0 ? 'yes' : 'no';
-    const usersAnswer = readlineSync.question(`Question ${randomValue} `);
-    if (usersAnswer === correctAnswer) {
-      console.log('Correct!');
-    } else {
-      console.log(`'${usersAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. Let's try again, ${userName}!`);
-      userFailed = true;
-    }
-    questionsCounter += 1;
-  }
-  if (!userFailed) {
-    console.log(`Congratulations, ${userName}!`);
-  }
-};

@@ -20,4 +20,4 @@ $ make install
 $ make start
 ```
 
-[![asciicast](https://asciinema.org/a/clhRvOhQstwmF4E9LjhvAjQJr.svg)](https://asciinema.org/a/clhRvOhQstwmF4E9LjhvAjQJr)
+[![asciicast](https://asciinema.org/a/qrVaW5LP7caiab18iSk4INwKO.svg)](https://asciinema.org/a/qrVaW5LP7caiab18iSk4INwKO)
