@@ -47,3 +47,12 @@ $ make link
 $ brain-progression
 ```
 [![asciicast](https://asciinema.org/a/M3LXXSzHfZKIHFNMLSGlM6Uhg.svg)](https://asciinema.org/a/M3LXXSzHfZKIHFNMLSGlM6Uhg)
+
+
+## Run BrainPrime
+
+```sh
+$ make link
+$ brain-prime
+```
+[![asciicast](https://asciinema.org/a/hp9m4Ove2iH1t47DCOi2iWYIl.svg)](https://asciinema.org/a/hp9m4Ove2iH1t47DCOi2iWYIl)
