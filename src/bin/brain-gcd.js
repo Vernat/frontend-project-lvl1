@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import { runBrainGame, showBrainGcdRulesInfo, brainGcdRound } from '../games/games';
+import { runBrainGame } from '../games/engine';
+import { showBrainGcdRulesInfo, brainGcdRound } from '../games/gcd';
 
 runBrainGame(brainGcdRound, showBrainGcdRulesInfo);
