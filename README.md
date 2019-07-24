@@ -12,47 +12,46 @@ This repository is created as an educational project from Hexlet. [Read more abo
 
 ```sh
 $ make install
+$ make link
 ```
+[![asciicast](https://asciinema.org/a/mNWBKRdQQt8nsEO4RXMC8868z.svg)](https://asciinema.org/a/mNWBKRdQQt8nsEO4RXMC8868z)
 
-## Run BrainEven
+
+## Run brain-even
 
 ```sh
-$ make link
 $ brain-even
 ```
-[![asciicast](https://asciinema.org/a/nlQCN4kqWGYusQudqBIZZTzYq.svg)](https://asciinema.org/a/nlQCN4kqWGYusQudqBIZZTzYq)
+[![asciicast](https://asciinema.org/a/Rr14AlEhwOvEDUwUrb3w6qdhL.svg)](https://asciinema.org/a/Rr14AlEhwOvEDUwUrb3w6qdhL)
 
 
-## Run BrainCalc
+## Run brain-calc
 
 ```sh
-$ make link
 $ brain-calc
 ```
-[![asciicast](https://asciinema.org/a/Em84m2EPiKD0yokqDUSJTqnAW.svg)](https://asciinema.org/a/Em84m2EPiKD0yokqDUSJTqnAW)
+[![asciicast](https://asciinema.org/a/2zlpUCyPU5m84D1JFqLpDR9AV.svg)](https://asciinema.org/a/2zlpUCyPU5m84D1JFqLpDR9AV)
 
 
-## Run BrainGcd
+## Run brain-gcd
 
 ```sh
-$ make link
 $ brain-gcd
 ```
-[![asciicast](https://asciinema.org/a/BGyNw6reC7bGjNBBg3moxM8Fs.svg)](https://asciinema.org/a/BGyNw6reC7bGjNBBg3moxM8Fs)
+[![asciicast](https://asciinema.org/a/lcFzF21kCMtTeoMnBrknSZPUh.svg)](https://asciinema.org/a/lcFzF21kCMtTeoMnBrknSZPUh)
 
-## Run BrainProgression
+
+## Run brain-progression
 
 ```sh
-$ make link
 $ brain-progression
 ```
-[![asciicast](https://asciinema.org/a/M3LXXSzHfZKIHFNMLSGlM6Uhg.svg)](https://asciinema.org/a/M3LXXSzHfZKIHFNMLSGlM6Uhg)
+[![asciicast](https://asciinema.org/a/icTn3u47AiSU7qcq8jWeKe28n.svg)](https://asciinema.org/a/icTn3u47AiSU7qcq8jWeKe28n)
 
 
-## Run BrainPrime
+## Run brain-prime
 
 ```sh
-$ make link
 $ brain-prime
 ```
-[![asciicast](https://asciinema.org/a/hp9m4Ove2iH1t47DCOi2iWYIl.svg)](https://asciinema.org/a/hp9m4Ove2iH1t47DCOi2iWYIl)
+[![asciicast](https://asciinema.org/a/mDQSsBMiR7AIu8RTRVwtp93g3.svg)](https://asciinema.org/a/mDQSsBMiR7AIu8RTRVwtp93g3)
