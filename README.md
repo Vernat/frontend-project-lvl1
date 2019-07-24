@@ -17,25 +17,33 @@ $ make install
 ## Run BrainEven
 
 ```sh
-$ make publish
+$ make link
 $ brain-even
 ```
-[![asciicast](https://asciinema.org/a/D4JfY4Ebn3dF1Nz8FLMMd55iI.svg)](https://asciinema.org/a/D4JfY4Ebn3dF1Nz8FLMMd55iI)
+[![asciicast](https://asciinema.org/a/nlQCN4kqWGYusQudqBIZZTzYq.svg)](https://asciinema.org/a/nlQCN4kqWGYusQudqBIZZTzYq)
 
 
 ## Run BrainCalc
 
 ```sh
-$ make publish
+$ make link
 $ brain-calc
 ```
-[![asciicast](https://asciinema.org/a/LwWHAe9hiG5N8LqjGn3sq5JN0.svg)](https://asciinema.org/a/LwWHAe9hiG5N8LqjGn3sq5JN0)
+[![asciicast](https://asciinema.org/a/Em84m2EPiKD0yokqDUSJTqnAW.svg)](https://asciinema.org/a/Em84m2EPiKD0yokqDUSJTqnAW)
 
 
 ## Run BrainGcd
 
 ```sh
-$ make publish
+$ make link
 $ brain-gcd
 ```
-[![asciicast](https://asciinema.org/a/HTqmsIEvsgaH4CCL75ivOZET1.svg)](https://asciinema.org/a/HTqmsIEvsgaH4CCL75ivOZET1)
+[![asciicast](https://asciinema.org/a/BGyNw6reC7bGjNBBg3moxM8Fs.svg)](https://asciinema.org/a/BGyNw6reC7bGjNBBg3moxM8Fs)
+
+## Run BrainProgression
+
+```sh
+$ make link
+$ brain-progression
+```
+[![asciicast](https://asciinema.org/a/M3LXXSzHfZKIHFNMLSGlM6Uhg.svg)](https://asciinema.org/a/M3LXXSzHfZKIHFNMLSGlM6Uhg)
