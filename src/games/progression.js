@@ -13,6 +13,7 @@ export const brainProgressionRound = () => {
   const start = getRandomInt(maxRandomValue);
   const hiddenElement = getRandomInt(length);
   const step = getRandomInt(maxRandomValue);
+
   const stringViewIter = (begin, iterNum) => {
     if (iterNum === length) {
       return '';
@@ -21,6 +22,7 @@ export const brainProgressionRound = () => {
     const next = func(begin, step);
     return `${stringViewOfBegin} ${stringViewIter(next, iterNum + 1)}`;
   };
+
   const stringView = stringViewIter(start, 0);
   const correctAnswer = func(start, step * hiddenElement);
   return cons(stringView, String(correctAnswer));

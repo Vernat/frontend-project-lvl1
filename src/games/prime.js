@@ -2,7 +2,7 @@ import { cons } from '@hexlet/pairs';
 import { getRandomInt } from './random';
 
 export const showBrainPrimeRulesInfo = () => {
-  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
+  console.log('Answer "yes" if given number is prime. Otherwise answer "no".\n');
 };
 
 const isPrime = (num) => {

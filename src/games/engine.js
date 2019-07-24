@@ -3,14 +3,13 @@ import { car, cdr } from '@hexlet/pairs';
 import { askUserName, sayWelcome, showUserName } from '..';
 
 
-const questionCount = 3;
-
 export const runBrainGame = (gameRoundFunc, showGameRuleFunc) => {
   sayWelcome();
   const userName = askUserName();
   showUserName(userName);
   showGameRuleFunc();
   let questionsCounter = 0;
+  const questionCount = 3;
   while (questionsCounter < questionCount) {
     const newRound = gameRoundFunc();
     const question = car(newRound);
