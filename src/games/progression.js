@@ -1,6 +1,7 @@
 
 import { cons } from '@hexlet/pairs';
 import { getRandomInt, add, minus } from './random';
+import { runBrainGame } from './engine';
 
 export const showBrainProgressionRulesInfo = () => {
   console.log('What number is missing in the progression?\n');
@@ -27,3 +28,5 @@ export const brainProgressionRound = () => {
   const correctAnswer = func(start, step * hiddenElement);
   return cons(stringView, String(correctAnswer));
 };
+
+export default () => runBrainGame(brainProgressionRound, showBrainProgressionRulesInfo);

@@ -1,5 +1,6 @@
 import { cons } from '@hexlet/pairs';
 import { getRandomInt } from './random';
+import { runBrainGame } from './engine';
 
 export const showBrainGcdRulesInfo = () => {
   console.log('Find the greatest common divisor of given numbers.\n');
@@ -26,3 +27,5 @@ export const brainGcdRound = () => {
   const correctAnswer = String(getGcd(a, b));
   return cons(question, correctAnswer);
 };
+
+export default () => runBrainGame(brainGcdRound, showBrainGcdRulesInfo);

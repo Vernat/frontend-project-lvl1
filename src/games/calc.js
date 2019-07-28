@@ -1,6 +1,6 @@
 import { cons } from '@hexlet/pairs';
 import { getRandomInt } from './random';
-
+import { runBrainGame } from './engine';
 
 export const showBrainCalcRulesInfo = () => {
   console.log('What is the result of the expression?\n');
@@ -18,3 +18,5 @@ export const brainCalcRound = () => {
     default: return cons(`${a} * ${b}`, String(a * b));
   }
 };
+
+export default () => runBrainGame(brainCalcRound, showBrainCalcRulesInfo);

@@ -1,5 +1,6 @@
 import { cons } from '@hexlet/pairs';
 import { getRandomInt } from './random';
+import { runBrainGame } from './engine';
 
 export const showBrainPrimeRulesInfo = () => {
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".\n');
@@ -23,3 +24,5 @@ export const brainPrimeRound = () => {
   const correctAnswer = isPrime(number) ? 'yes' : 'no';
   return cons(number, correctAnswer);
 };
+
+export default () => runBrainGame(brainPrimeRound, showBrainPrimeRulesInfo);
