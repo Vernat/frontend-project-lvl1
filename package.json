@@ -2,7 +2,6 @@
   "name": "frontend-project-lvl1",
   "version": "0.9.1",
   "description": "A set of brain games. This repository is created as an educational project from Hexlet.",
-  "main": "brain-games.js",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
     "brain-even": "dist/bin/brain-even.js",
