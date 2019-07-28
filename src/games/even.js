@@ -5,11 +5,13 @@ import { runBrainGame } from './engine';
 
 export const getRulesInfo = () => 'Answer "yes" if number even otherwise answer "no".\n';
 
+const isEven = num => num % 2 === 0;
+
 const brainEvenRound = () => {
   const maxValue = 1000;
-  const randomValue = getRandomInt(maxValue);
-  const correctAnswer = randomValue % 2 === 0 ? 'yes' : 'no';
-  return cons(randomValue, correctAnswer);
+  const valueForQuestion = getRandomInt(maxValue);
+  const correctAnswer = isEven(valueForQuestion) ? 'yes' : 'no';
+  return cons(valueForQuestion, correctAnswer);
 };
 
 export default () => runBrainGame(brainEvenRound, getRulesInfo);
