@@ -3,11 +3,11 @@ import { car, cdr } from '@hexlet/pairs';
 import { askUserName, sayWelcome, showUserName } from '..';
 
 
-export const runBrainGame = (gameRoundFunc, showGameRuleFunc) => {
+export const runBrainGame = (gameRoundFunc, getGameRuleFunc) => {
   sayWelcome();
   const userName = askUserName();
   showUserName(userName);
-  showGameRuleFunc();
+  console.log(getGameRuleFunc());
   let questionsCounter = 0;
   const questionCount = 3;
   while (questionsCounter < questionCount) {

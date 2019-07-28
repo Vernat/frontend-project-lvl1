@@ -2,9 +2,7 @@ import { cons } from '@hexlet/pairs';
 import { getRandomInt } from './random';
 import { runBrainGame } from './engine';
 
-export const showBrainPrimeRulesInfo = () => {
-  console.log('Answer "yes" if given number is prime. Otherwise answer "no".\n');
-};
+export const getRulesInfo = () => 'Answer "yes" if given number is prime. Otherwise answer "no".\n';
 
 const isPrime = (num) => {
   const round = Math.sqrt(num);
@@ -25,4 +23,4 @@ export const brainPrimeRound = () => {
   return cons(number, correctAnswer);
 };
 
-export default () => runBrainGame(brainPrimeRound, showBrainPrimeRulesInfo);
+export default () => runBrainGame(brainPrimeRound, getRulesInfo);

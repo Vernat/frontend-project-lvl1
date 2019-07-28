@@ -3,9 +3,7 @@ import { getRandomInt } from './random';
 import { runBrainGame } from './engine';
 
 
-const showBrainEvenRulesInfo = () => {
-  console.log('Answer "yes" if number even otherwise answer "no".\n');
-};
+export const getRulesInfo = () => 'Answer "yes" if number even otherwise answer "no".\n';
 
 const brainEvenRound = () => {
   const maxValue = 1000;
@@ -14,4 +12,4 @@ const brainEvenRound = () => {
   return cons(randomValue, correctAnswer);
 };
 
-export default () => runBrainGame(brainEvenRound, showBrainEvenRulesInfo);
+export default () => runBrainGame(brainEvenRound, getRulesInfo);

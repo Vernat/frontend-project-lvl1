@@ -2,9 +2,7 @@ import { cons } from '@hexlet/pairs';
 import { getRandomInt } from './random';
 import { runBrainGame } from './engine';
 
-export const showBrainCalcRulesInfo = () => {
-  console.log('What is the result of the expression?\n');
-};
+export const getRulesInfo = () => 'What is the result of the expression?\n';
 
 export const brainCalcRound = () => {
   const maxValue = 30;
@@ -19,4 +17,4 @@ export const brainCalcRound = () => {
   }
 };
 
-export default () => runBrainGame(brainCalcRound, showBrainCalcRulesInfo);
+export default () => runBrainGame(brainCalcRound, runBrainGame);
