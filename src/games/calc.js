@@ -17,4 +17,4 @@ export const brainCalcRound = () => {
   }
 };
 
-export default () => runBrainGame(brainCalcRound, runBrainGame);
+export default () => runBrainGame(brainCalcRound, getRulesInfo);
