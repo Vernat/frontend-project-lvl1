@@ -3,11 +3,11 @@ import { runBrainGame } from './engine';
 
 export const getRulesInfo = () => 'What is the result of the expression?\n';
 
-export const getNextCalcRound = () => {
+export const getNextRound = () => {
   const maxValue = 30;
   const a = getRandomInt(maxValue);
   const b = getRandomInt(maxValue);
   return getRandomOperationWithAnswer(a, b);
 };
 
-export default () => runBrainGame(getNextCalcRound, getRulesInfo);
+export default () => runBrainGame(getNextRound, getRulesInfo);

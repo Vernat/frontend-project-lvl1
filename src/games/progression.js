@@ -9,7 +9,7 @@ const progressionLength = 10;
 const maxRandomValue = 30;
 const getRandomFunc = () => (getRandomInt(maxRandomValue) % 2 === 0 ? add : minus);
 
-export const getNextProgressionRound = () => {
+export const getNextRound = () => {
   const func = getRandomFunc();
   const start = getRandomInt(maxRandomValue);
   const hiddenElementNumber = getRandomInt(progressionLength);
@@ -29,4 +29,4 @@ export const getNextProgressionRound = () => {
   return cons(question, correctAnswer);
 };
 
-export default () => runBrainGame(getNextProgressionRound, getRulesInfo);
+export default () => runBrainGame(getNextRound, getRulesInfo);
