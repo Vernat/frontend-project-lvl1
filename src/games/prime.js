@@ -16,11 +16,11 @@ const isPrime = (num) => {
   return true;
 };
 
-export const brainPrimeRound = () => {
+export const getNextPrimeRound = () => {
   const max = 100;
   const number = getRandomInt(max);
   const correctAnswer = isPrime(number) ? 'yes' : 'no';
   return cons(number, correctAnswer);
 };
 
-export default () => runBrainGame(brainPrimeRound, getRulesInfo);
+export default () => runBrainGame(getNextPrimeRound, getRulesInfo);

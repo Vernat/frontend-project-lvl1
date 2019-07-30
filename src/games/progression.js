@@ -5,7 +5,7 @@ import { runBrainGame } from './engine';
 
 export const getRulesInfo = () => 'What number is missing in the progression?\n';
 
-export const brainProgressionRound = () => {
+export const getNextProgressionRound = () => {
   const maxRandomValue = 30;
   const length = 10;
   const func = getRandomInt(maxRandomValue) % 2 === 0 ? add : minus;
@@ -27,4 +27,4 @@ export const brainProgressionRound = () => {
   return cons(stringView, String(correctAnswer));
 };
 
-export default () => runBrainGame(brainProgressionRound, getRulesInfo);
+export default () => runBrainGame(getNextProgressionRound, getRulesInfo);

@@ -17,7 +17,7 @@ const getGcd = (val1, val2) => {
   return a + b;
 };
 
-export const brainGcdRound = () => {
+export const getNextGcdRound = () => {
   const maxValue = 100;
   const a = getRandomInt(maxValue);
   const b = getRandomInt(maxValue);
@@ -26,4 +26,4 @@ export const brainGcdRound = () => {
   return cons(question, correctAnswer);
 };
 
-export default () => runBrainGame(brainGcdRound, getRulesInfo);
+export default () => runBrainGame(getNextGcdRound, getRulesInfo);
