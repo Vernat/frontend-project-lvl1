@@ -5,26 +5,28 @@ import { runBrainGame } from './engine';
 
 export const getRulesInfo = () => 'What number is missing in the progression?\n';
 
+const progressionLength = 10;
+const maxRandomValue = 30;
+const getRandomFunc = () => (getRandomInt(maxRandomValue) % 2 === 0 ? add : minus);
+
 export const getNextProgressionRound = () => {
-  const maxRandomValue = 30;
-  const length = 10;
-  const func = getRandomInt(maxRandomValue) % 2 === 0 ? add : minus;
+  const func = getRandomFunc();
   const start = getRandomInt(maxRandomValue);
-  const hiddenElement = getRandomInt(length);
+  const hiddenElementNumber = getRandomInt(progressionLength);
   const step = getRandomInt(maxRandomValue);
 
-  const stringViewIter = (begin, iterNum) => {
-    if (iterNum === length) {
+  const getQuestion = (begin, iterNum) => {
+    if (iterNum === progressionLength) {
       return '';
     }
-    const stringViewOfBegin = hiddenElement === iterNum ? '..' : String(begin);
+    const questionPart = hiddenElementNumber === iterNum ? '..' : `${begin}`;
     const next = func(begin, step);
-    return `${stringViewOfBegin} ${stringViewIter(next, iterNum + 1)}`;
+    return `${questionPart} ${getQuestion(next, iterNum + 1)}`;
   };
 
-  const stringView = stringViewIter(start, 0);
-  const correctAnswer = func(start, step * hiddenElement);
-  return cons(stringView, String(correctAnswer));
+  const question = getQuestion(start, 0);
+  const correctAnswer = `${func(start, step * hiddenElementNumber)}`;
+  return cons(question, correctAnswer);
 };
 
 export default () => runBrainGame(getNextProgressionRound, getRulesInfo);
