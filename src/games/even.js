@@ -2,7 +2,6 @@ import { cons } from '@hexlet/pairs';
 import { getRandomInt } from './random';
 import { runBrainGame } from './engine';
 
-
 export const getRulesInfo = () => 'Answer "yes" if number even otherwise answer "no".\n';
 
 const isEven = num => num % 2 === 0;

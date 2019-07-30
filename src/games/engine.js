@@ -2,7 +2,6 @@ import readlineSync from 'readline-sync';
 import { car, cdr } from '@hexlet/pairs';
 import { askUserName, sayWelcome, showUserName } from '..';
 
-
 export const runBrainGame = (gameRoundFunc, getGameRuleFunc) => {
   sayWelcome();
   const userName = askUserName();
