@@ -9,9 +9,9 @@ const isEven = num => num % 2 === 0;
 
 const brainEvenRound = () => {
   const maxValue = 1000;
-  const valueForQuestion = getRandomInt(maxValue);
-  const correctAnswer = isEven(valueForQuestion) ? 'yes' : 'no';
-  return cons(valueForQuestion, correctAnswer);
+  const numberForQuestion = getRandomInt(maxValue);
+  const correctAnswer = isEven(numberForQuestion) ? 'yes' : 'no';
+  return cons(numberForQuestion, correctAnswer);
 };
 
 export default () => runBrainGame(brainEvenRound, getRulesInfo);
