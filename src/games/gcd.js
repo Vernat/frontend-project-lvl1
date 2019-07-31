@@ -1,5 +1,5 @@
 import { cons } from '@hexlet/pairs';
-import { getRandomInt } from './random';
+import { getRandomNumberBetween } from './random';
 import { runBrainGame } from './engine';
 
 export const getRulesInfo = () => 'Find the greatest common divisor of given numbers.\n';
@@ -19,8 +19,8 @@ const getGcd = (val1, val2) => {
 
 export const getNextRound = () => {
   const maxValue = 100;
-  const a = getRandomInt(maxValue);
-  const b = getRandomInt(maxValue);
+  const a = getRandomNumberBetween(0, maxValue);
+  const b = getRandomNumberBetween(0, maxValue);
   const question = `${a} ${b}`;
   const correctAnswer = String(getGcd(a, b));
   return cons(question, correctAnswer);

@@ -1,19 +1,19 @@
 
 import { cons } from '@hexlet/pairs';
-import { getRandomInt, add, minus } from './random';
+import { getRandomNumberBetween, add, minus } from './random';
 import { runBrainGame } from './engine';
 
 export const getRulesInfo = () => 'What number is missing in the progression?\n';
 
 const progressionLength = 10;
 const maxRandomValue = 30;
-const getRandomFunc = () => (getRandomInt(maxRandomValue) % 2 === 0 ? add : minus);
+const getRandomFunc = () => (getRandomNumberBetween(0, maxRandomValue) % 2 === 0 ? add : minus);
 
 export const getNextRound = () => {
   const func = getRandomFunc();
-  const start = getRandomInt(maxRandomValue);
-  const hiddenElementNumber = getRandomInt(progressionLength);
-  const step = getRandomInt(maxRandomValue);
+  const start = getRandomNumberBetween(0, maxRandomValue);
+  const hiddenElementNumber = getRandomNumberBetween(0, progressionLength);
+  const step = getRandomNumberBetween(0, maxRandomValue);
 
   const getQuestion = (begin, iterNum) => {
     if (iterNum === progressionLength) {

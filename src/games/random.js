@@ -1,6 +1,6 @@
 import { cons } from '@hexlet/pairs';
 
-export const getRandomInt = max => Math.floor(Math.random() * Math.floor(max));
+export const getRandomNumberBetween = (min, max) => Math.random() * (max - min) + min;
 
 export const add = (a, b) => a + b;
 export const minus = (a, b) => a - b;
@@ -16,5 +16,5 @@ export const getPairForMultiply = (a, b) => cons(getStringForMultiply(a, b), `${
 
 export const getRandomOperationWithAnswer = (a, b) => {
   const variants = [getPairForAdd, getPairForMinus, getPairForMultiply];
-  return variants[getRandomInt(variants.length)](a, b);
+  return variants[getRandomNumberBetween(0, variants.length)](a, b);
 };

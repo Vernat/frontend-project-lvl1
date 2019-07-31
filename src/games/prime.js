@@ -1,5 +1,5 @@
 import { cons } from '@hexlet/pairs';
-import { getRandomInt } from './random';
+import { getRandomNumberBetween } from './random';
 import { runBrainGame } from './engine';
 
 export const getRulesInfo = () => 'Answer "yes" if given number is prime. Otherwise answer "no".\n';
@@ -18,7 +18,7 @@ const isPrime = (num) => {
 
 export const getNextRound = () => {
   const max = 100;
-  const number = getRandomInt(max);
+  const number = getRandomNumberBetween(0, max);
   const correctAnswer = isPrime(number) ? 'yes' : 'no';
   return cons(number, correctAnswer);
 };
