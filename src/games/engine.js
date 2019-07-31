@@ -7,9 +7,8 @@ export const runBrainGame = (gameRoundFunc, getGameRuleFunc) => {
   const userName = askUserName();
   showUserName(userName);
   console.log(getGameRuleFunc());
-  let questionsCounter = 0;
-  const questionCount = 3;
-  while (questionsCounter < questionCount) {
+  const roundsCount = 3;
+  for (let i = 0; i < roundsCount; i += 1) {
     const newRound = gameRoundFunc();
     const question = car(newRound);
     const correctAnswer = cdr(newRound);
@@ -17,10 +16,10 @@ export const runBrainGame = (gameRoundFunc, getGameRuleFunc) => {
     if (usersAnswer === correctAnswer) {
       console.log('Correct!\n');
     } else {
-      console.log(`'${usersAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. Let's try again, ${userName}!\n`);
+      console.log(`'${usersAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+      console.log(`Let's try again, ${userName}!\n`);
       return;
     }
-    questionsCounter += 1;
   }
   console.log(`Congratulations, ${userName}!\n`);
 };
