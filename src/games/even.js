@@ -2,8 +2,6 @@ import { cons } from '@hexlet/pairs';
 import { getRandomNumberBetween } from '../random';
 import { runBrainGame } from '../engine';
 
-export const getRulesInfo = () => 'Answer "yes" if number even otherwise answer "no".\n';
-
 const isEven = num => num % 2 === 0;
 
 const getNextRound = () => {
@@ -13,4 +11,6 @@ const getNextRound = () => {
   return cons(numberForQuestion, correctAnswer);
 };
 
-export default () => runBrainGame(getNextRound, getRulesInfo);
+const gameRulesInfo = 'Answer "yes" if number even otherwise answer "no".\n';
+
+export default () => runBrainGame(getNextRound, gameRulesInfo);

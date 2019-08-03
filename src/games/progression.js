@@ -3,13 +3,11 @@ import { cons } from '@hexlet/pairs';
 import { getRandomNumberBetween, add, minus } from '../random';
 import { runBrainGame } from '../engine';
 
-export const getRulesInfo = () => 'What number is missing in the progression?\n';
-
 const progressionLength = 10;
 const maxRandomValue = 30;
 const getRandomFunc = () => (getRandomNumberBetween(0, maxRandomValue) % 2 === 0 ? add : minus);
 
-export const getNextRound = () => {
+const getNextRound = () => {
   const func = getRandomFunc();
   const start = getRandomNumberBetween(0, maxRandomValue);
   const hiddenElementNumber = getRandomNumberBetween(0, progressionLength);
@@ -29,4 +27,6 @@ export const getNextRound = () => {
   return cons(question, correctAnswer);
 };
 
-export default () => runBrainGame(getNextRound, getRulesInfo);
+const gameRulesInfo = 'What number is missing in the progression?\n';
+
+export default () => runBrainGame(getNextRound, gameRulesInfo);

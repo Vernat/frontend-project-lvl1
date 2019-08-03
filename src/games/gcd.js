@@ -2,8 +2,6 @@ import { cons } from '@hexlet/pairs';
 import { getRandomNumberBetween } from '../random';
 import { runBrainGame } from '../engine';
 
-export const getRulesInfo = () => 'Find the greatest common divisor of given numbers.\n';
-
 const getGcd = (val1, val2) => {
   let a = val1;
   let b = val2;
@@ -17,7 +15,7 @@ const getGcd = (val1, val2) => {
   return a + b;
 };
 
-export const getNextRound = () => {
+const getNextRound = () => {
   const maxValue = 100;
   const a = getRandomNumberBetween(0, maxValue);
   const b = getRandomNumberBetween(0, maxValue);
@@ -26,4 +24,6 @@ export const getNextRound = () => {
   return cons(question, correctAnswer);
 };
 
-export default () => runBrainGame(getNextRound, getRulesInfo);
+const gameRulesInfo = 'Find the greatest common divisor of given numbers.\n';
+
+export default () => runBrainGame(getNextRound, gameRulesInfo);
