@@ -15,8 +15,7 @@ const isPrime = (num) => {
 };
 
 const getNextRound = () => {
-  const max = 100;
-  const number = getRandomNumberBetween(0, max);
+  const number = getRandomNumberBetween(0, 100);
   const correctAnswer = isPrime(number) ? 'yes' : 'no';
   return cons(number, correctAnswer);
 };

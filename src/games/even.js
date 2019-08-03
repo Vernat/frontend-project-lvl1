@@ -5,8 +5,7 @@ import { runBrainGame } from '../engine';
 const isEven = num => num % 2 === 0;
 
 const getNextRound = () => {
-  const maxValue = 1000;
-  const numberForQuestion = getRandomNumberBetween(0, maxValue);
+  const numberForQuestion = getRandomNumberBetween(0, 1000);
   const correctAnswer = isEven(numberForQuestion) ? 'yes' : 'no';
   return cons(numberForQuestion, correctAnswer);
 };
