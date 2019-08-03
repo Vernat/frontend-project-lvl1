@@ -1,6 +1,6 @@
 import { cons } from '@hexlet/pairs';
-import { getRandomNumberBetween } from './random';
-import { runBrainGame } from './engine';
+import { getRandomNumberBetween } from '../random';
+import { runBrainGame } from '../engine';
 
 export const getRulesInfo = () => 'Answer "yes" if number even otherwise answer "no".\n';
 

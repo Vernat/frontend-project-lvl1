@@ -1,8 +1,8 @@
 import { cons } from '@hexlet/pairs';
 import {
   getRandomNumberBetween, add, minus, multiply,
-} from './random';
-import { runBrainGame } from './engine';
+} from '../random';
+import { runBrainGame } from '../engine';
 
 export const getRulesInfo = () => 'What is the result of the expression?\n';
 

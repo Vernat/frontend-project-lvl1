@@ -1,7 +1,7 @@
 
 import { cons } from '@hexlet/pairs';
-import { getRandomNumberBetween, add, minus } from './random';
-import { runBrainGame } from './engine';
+import { getRandomNumberBetween, add, minus } from '../random';
+import { runBrainGame } from '../engine';
 
 export const getRulesInfo = () => 'What number is missing in the progression?\n';
 
