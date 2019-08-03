@@ -1,8 +1,10 @@
 import { cons } from '@hexlet/pairs';
-import {
-  getRandomNumberBetween, add, minus, multiply,
-} from '../random';
+import getRandomNumberBetween from '../random';
 import { runBrainGame } from '../engine';
+
+const add = (a, b) => a + b;
+const minus = (a, b) => a - b;
+const multiply = (a, b) => a * b;
 
 const getRoundDataForAdd = (a, b) => cons(`${a} + ${b}`, `${add(a, b)}`);
 const getRoundDataForMinus = (a, b) => cons(`${a} - ${b}`, `${minus(a, b)}`);

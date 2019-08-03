@@ -1,5 +1,5 @@
 import { cons } from '@hexlet/pairs';
-import { getRandomNumberBetween } from '../random';
+import getRandomNumberBetween from '../random';
 import { runBrainGame } from '../engine';
 
 const isEven = num => num % 2 === 0;
