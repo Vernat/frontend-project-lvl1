@@ -1,4 +1,5 @@
 import { cons } from '@hexlet/pairs';
+import { l, get, length } from '@hexlet/pairs-data';
 import getRandomNumberBetween from '../random';
 import { runBrainGame } from '../engine';
 
@@ -9,11 +10,12 @@ const multiply = (a, b) => a * b;
 const getRoundDataForAdd = (a, b) => cons(`${a} + ${b}`, `${add(a, b)}`);
 const getRoundDataForMinus = (a, b) => cons(`${a} - ${b}`, `${minus(a, b)}`);
 const getRoundDataForMultiply = (a, b) => cons(`${a} * ${b}`, `${multiply(a, b)}`);
+const roundVariants = l(getRoundDataForAdd, getRoundDataForMinus, getRoundDataForMultiply);
 
-const getRandomOperationWithAnswer = (a, b) => {
-  const roundVariants = [getRoundDataForAdd, getRoundDataForMinus, getRoundDataForMultiply];
-  return roundVariants[getRandomNumberBetween(0, roundVariants.length)](a, b);
-};
+const getRandomOperationWithAnswer = (a, b) => get(
+  getRandomNumberBetween(0, length(roundVariants)),
+  roundVariants,
+)(a, b);
 
 const getNextRound = () => {
   const maxValue = 30;
