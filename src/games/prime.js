@@ -14,12 +14,12 @@ const isPrime = (num) => {
   return true;
 };
 
-const getNextRound = () => {
+const getRoundData = () => {
   const number = getRandomNumberBetween(0, 100);
   const correctAnswer = isPrime(number) ? 'yes' : 'no';
   return cons(number, correctAnswer);
 };
 
-const gameRulesInfo = 'Answer "yes" if given number is prime. Otherwise answer "no".\n';
+const gameInfo = 'Answer "yes" if given number is prime. Otherwise answer "no".\n';
 
-export default () => runBrainGame(getNextRound, gameRulesInfo);
+export default () => runBrainGame(getRoundData, gameInfo);

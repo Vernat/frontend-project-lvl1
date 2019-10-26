@@ -6,7 +6,7 @@ import { runBrainGame } from '../engine';
 const progressionLength = 10;
 const maxRandomValue = 30;
 
-const getNextRound = () => {
+const getRoundData = () => {
   const start = getRandomNumberBetween(0, maxRandomValue);
   const numberOfHiddenElement = getRandomNumberBetween(0, progressionLength);
   const step = getRandomNumberBetween(-maxRandomValue, maxRandomValue);
@@ -25,6 +25,6 @@ const getNextRound = () => {
   return cons(question, correctAnswer);
 };
 
-const gameRulesInfo = 'What number is missing in the progression?\n';
+const gameInfo = 'What number is missing in the progression?\n';
 
-export default () => runBrainGame(getNextRound, gameRulesInfo);
+export default () => runBrainGame(getRoundData, gameInfo);

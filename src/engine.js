@@ -9,9 +9,9 @@ export const runBrainGame = (getNextGameRound, gameRule) => {
   console.log(`Hello ${userName}\n`);
   console.log(gameRule);
   for (let i = 0; i < roundsCount; i += 1) {
-    const nextRound = getNextGameRound();
-    const question = car(nextRound);
-    const correctAnswer = cdr(nextRound);
+    const roundData = getNextGameRound();
+    const question = car(roundData);
+    const correctAnswer = cdr(roundData);
     const usersAnswer = readlineSync.question(`Question ${question}\n`);
     if (usersAnswer === correctAnswer) {
       console.log('Correct!\n');

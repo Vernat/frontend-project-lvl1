@@ -18,12 +18,13 @@ const getRandomOperationWithAnswer = (a, b) => get(
 )(a, b);
 
 const getNextRound = () => {
+const getRoundData = () => {
   const maxValue = 30;
   const a = getRandomNumberBetween(0, maxValue);
   const b = getRandomNumberBetween(0, maxValue);
   return getRandomOperationWithAnswer(a, b);
 };
 
-const gameRules = 'What is the result of the expression?\n';
+const gameInfo = 'What is the result of the expression?\n';
 
-export default () => runBrainGame(getNextRound, gameRules);
+export default () => runBrainGame(getRoundData, gameInfo);

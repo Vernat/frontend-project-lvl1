@@ -15,7 +15,7 @@ const getGcd = (val1, val2) => {
   return a + b;
 };
 
-const getNextRound = () => {
+const getRoundData = () => {
   const maxValue = 100;
   const a = getRandomNumberBetween(0, maxValue);
   const b = getRandomNumberBetween(0, maxValue);
@@ -24,6 +24,6 @@ const getNextRound = () => {
   return cons(question, correctAnswer);
 };
 
-const gameRulesInfo = 'Find the greatest common divisor of given numbers.\n';
+const gameInfo = 'Find the greatest common divisor of given numbers.\n';
 
-export default () => runBrainGame(getNextRound, gameRulesInfo);
+export default () => runBrainGame(getRoundData, gameInfo);
