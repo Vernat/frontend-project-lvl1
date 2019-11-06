@@ -14,7 +14,7 @@ This repository is created as an educational project from Hexlet. [Read more abo
 $ make install
 $ make link
 ```
-[![asciicast](https://asciinema.org/a/mNWBKRdQQt8nsEO4RXMC8868z.svg)](https://asciinema.org/a/mNWBKRdQQt8nsEO4RXMC8868z)
+[![asciicast](https://asciinema.org/a/4YRTzsTz8mhgHFzWmpdiPxN4x.svg)](https://asciinema.org/a/4YRTzsTz8mhgHFzWmpdiPxN4x)
 
 
 ## Run brain-even
@@ -22,7 +22,7 @@ $ make link
 ```sh
 $ brain-even
 ```
-[![asciicast](https://asciinema.org/a/Rr14AlEhwOvEDUwUrb3w6qdhL.svg)](https://asciinema.org/a/Rr14AlEhwOvEDUwUrb3w6qdhL)
+[![asciicast](https://asciinema.org/a/8e7j3AaVpKe4M3xeTnmZmWRMN.svg)](https://asciinema.org/a/8e7j3AaVpKe4M3xeTnmZmWRMN)
 
 
 ## Run brain-calc
@@ -30,7 +30,7 @@ $ brain-even
 ```sh
 $ brain-calc
 ```
-[![asciicast](https://asciinema.org/a/2zlpUCyPU5m84D1JFqLpDR9AV.svg)](https://asciinema.org/a/2zlpUCyPU5m84D1JFqLpDR9AV)
+[![asciicast](https://asciinema.org/a/Db3rSfQqIs9dPVAiUiYt0HJjU.svg)](https://asciinema.org/a/Db3rSfQqIs9dPVAiUiYt0HJjU)
 
 
 ## Run brain-gcd
@@ -38,7 +38,7 @@ $ brain-calc
 ```sh
 $ brain-gcd
 ```
-[![asciicast](https://asciinema.org/a/lcFzF21kCMtTeoMnBrknSZPUh.svg)](https://asciinema.org/a/lcFzF21kCMtTeoMnBrknSZPUh)
+[![asciicast](https://asciinema.org/a/62tAJVuwoxZfiEsD4tgUvpv3r.svg)](https://asciinema.org/a/62tAJVuwoxZfiEsD4tgUvpv3r)
 
 
 ## Run brain-progression
@@ -46,7 +46,7 @@ $ brain-gcd
 ```sh
 $ brain-progression
 ```
-[![asciicast](https://asciinema.org/a/icTn3u47AiSU7qcq8jWeKe28n.svg)](https://asciinema.org/a/icTn3u47AiSU7qcq8jWeKe28n)
+[![asciicast](https://asciinema.org/a/PzdxifJZSmlQvH2liFivbMHVK.svg)](https://asciinema.org/a/PzdxifJZSmlQvH2liFivbMHVK)
 
 
 ## Run brain-prime
