@@ -1,11 +1,11 @@
 import { cons } from '@hexlet/pairs';
-import getRandomNumberBetween from '../random';
+import getRandomNumber from '../random';
 import { runBrainGame } from '../engine';
 
 const isEven = num => num % 2 === 0;
 
 const getRoundData = () => {
-  const question = getRandomNumberBetween(0, 1000);
+  const question = getRandomNumber(0, 1000);
   const correctAnswer = isEven(question) ? 'yes' : 'no';
   return cons(question, correctAnswer);
 };

@@ -1,5 +1,5 @@
 import { cons } from '@hexlet/pairs';
-import getRandomNumberBetween from '../random';
+import getRandomNumber from '../random';
 import { runBrainGame } from '../engine';
 
 const getGcd = (val1, val2) => {
@@ -17,8 +17,8 @@ const getGcd = (val1, val2) => {
 
 const getRoundData = () => {
   const maxValue = 100;
-  const a = getRandomNumberBetween(0, maxValue);
-  const b = getRandomNumberBetween(0, maxValue);
+  const a = getRandomNumber(0, maxValue);
+  const b = getRandomNumber(0, maxValue);
   const question = `${a} ${b}`;
   const correctAnswer = String(getGcd(a, b));
   return cons(question, correctAnswer);
