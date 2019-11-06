@@ -4,7 +4,7 @@ import getRandomNumber from '../random';
 import { runBrainGame } from '../engine';
 
 const progressionLength = 10;
-const maxRandomValue = 30;
+const maxRandomValue = 20;
 
 const getRoundData = () => {
   const start = getRandomNumber(0, maxRandomValue);

@@ -54,4 +54,4 @@ $ brain-progression
 ```sh
 $ brain-prime
 ```
-[![asciicast](https://asciinema.org/a/mDQSsBMiR7AIu8RTRVwtp93g3.svg)](https://asciinema.org/a/mDQSsBMiR7AIu8RTRVwtp93g3)
+[![asciicast](https://asciinema.org/a/rBTSNBBBmTrx0ZUlETIv0t84B.svg)](https://asciinema.org/a/rBTSNBBBmTrx0ZUlETIv0t84B)
