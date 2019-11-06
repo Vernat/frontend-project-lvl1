@@ -10,6 +10,6 @@ const getRoundData = () => {
   return cons(question, correctAnswer);
 };
 
-const gameInfo = 'Answer "yes" if number even otherwise answer "no".\n';
+const gameInfo = 'Answer "yes" if number even otherwise answer "no".';
 
 export default () => runBrainGame(getRoundData, gameInfo);

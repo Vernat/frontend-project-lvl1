@@ -24,6 +24,6 @@ const getRoundData = () => {
   return cons(question, correctAnswer);
 };
 
-const gameInfo = 'Find the greatest common divisor of given numbers.\n';
+const gameInfo = 'Find the greatest common divisor of given numbers.';
 
 export default () => runBrainGame(getRoundData, gameInfo);

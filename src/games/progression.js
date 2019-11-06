@@ -25,6 +25,6 @@ const getRoundData = () => {
   return cons(question, correctAnswer);
 };
 
-const gameInfo = 'What number is missing in the progression?\n';
+const gameInfo = 'What number is missing in the progression?';
 
 export default () => runBrainGame(getRoundData, gameInfo);

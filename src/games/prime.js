@@ -20,6 +20,6 @@ const getRoundData = () => {
   return cons(number, correctAnswer);
 };
 
-const gameInfo = 'Answer "yes" if given number is prime. Otherwise answer "no".\n';
+const gameInfo = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 export default () => runBrainGame(getRoundData, gameInfo);

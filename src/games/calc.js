@@ -24,6 +24,6 @@ const getRoundData = () => {
   return cons(`${a} ${operationSymbol} ${b}`, `${operationFunc(a, b)}`);
 };
 
-const gameInfo = 'What is the result of the expression?\n';
+const gameInfo = 'What is the result of the expression?';
 
 export default () => runBrainGame(getRoundData, gameInfo);
