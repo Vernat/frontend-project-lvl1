@@ -21,7 +21,7 @@ const getRoundData = () => {
   };
 
   const question = getQuestion(start, 0);
-  const correctAnswer = `${start + step * numberOfHiddenElement}`;
+  const correctAnswer = (start + step * hiddenElementIndex).toString();
   return cons(question, correctAnswer);
 };
 
