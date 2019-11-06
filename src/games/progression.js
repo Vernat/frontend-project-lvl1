@@ -16,7 +16,7 @@ const getRoundData = () => {
       return '';
     }
     const questionPart = numberOfHiddenElement === iterationCounter ? '..' : `${begin}`;
-    const next = begin + step;
+    const next = start + step * iterationCounter;
     return `${questionPart} ${getQuestion(next, iterationCounter + 1)}`;
   };
 
