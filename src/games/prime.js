@@ -5,7 +5,7 @@ import { runBrainGame } from '../engine';
 const isPrime = (num) => {
   const round = Math.sqrt(num);
   let i = 2;
-  while (i < round) {
+  while (i <= round) {
     if (num % i === 0) {
       return false;
     }
