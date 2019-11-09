@@ -3,13 +3,12 @@ import { l, get, length } from '@hexlet/pairs-data';
 import getRandomNumber from '../random';
 import { runBrainGame } from '../engine';
 
-const add = (a, b) => a + b;
-const minus = (a, b) => a - b;
-const multiply = (a, b) => a * b;
-const operationInfoList = l(cons('+', add), cons('-', minus), cons('*', multiply));
 const getRandomOperation = () => get(
   getRandomNumber(0, length(operationInfoList)),
-  operationInfoList,
+const operations = l(
+  cons('+', (a, b) => a + b),
+  cons('-', (a, b) => a - b),
+  cons('*', (a, b) => a * b),
 );
 const getOperationSymbol = operation => car(operation);
 const getOperationFunc = operation => cdr(operation);
