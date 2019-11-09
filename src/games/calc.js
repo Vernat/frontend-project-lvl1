@@ -1,15 +1,14 @@
 import { cons, car, cdr } from '@hexlet/pairs';
-import { l, get, length } from '@hexlet/pairs-data';
+import { l, random } from '@hexlet/pairs-data';
 import getRandomNumber from '../random';
 import { runBrainGame } from '../engine';
 
-const getRandomOperation = () => get(
-  getRandomNumber(0, length(operationInfoList)),
 const operations = l(
   cons('+', (a, b) => a + b),
   cons('-', (a, b) => a - b),
   cons('*', (a, b) => a * b),
 );
+const getRandomOperation = () => random(operations);
 const getOperationSymbol = operation => car(operation);
 const getOperationFunc = operation => cdr(operation);
 
