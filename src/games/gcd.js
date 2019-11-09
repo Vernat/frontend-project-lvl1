@@ -20,7 +20,7 @@ const getRoundData = () => {
   const a = getRandomNumber(0, maxValue);
   const b = getRandomNumber(0, maxValue);
   const question = `${a} ${b}`;
-  const correctAnswer = String(getGcd(a, b));
+  const correctAnswer = getGcd(a, b).toString();
   return cons(question, correctAnswer);
 };
 
