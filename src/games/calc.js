@@ -9,16 +9,14 @@ const operations = l(
   cons('*', (a, b) => a * b),
 );
 const getRandomOperation = () => random(operations);
-const getOperationSymbol = operation => car(operation);
-const getOperationFunc = operation => cdr(operation);
 
 const getRoundData = () => {
   const maxValue = 30;
   const a = getRandomNumber(0, maxValue);
   const b = getRandomNumber(0, maxValue);
   const operation = getRandomOperation();
-  const operationSymbol = getOperationSymbol(operation);
-  const operationFunc = getOperationFunc(operation);
+  const operationSymbol = car(operation);
+  const operationFunc = cdr(operation);
   const question = `${a} ${operationSymbol} ${b}`;
   const answer = operationFunc(a, b).toString();
   return cons(question, answer);
