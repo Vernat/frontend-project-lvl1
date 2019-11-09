@@ -19,7 +19,9 @@ const getRoundData = () => {
   const operation = getRandomOperation();
   const operationSymbol = getOperationSymbol(operation);
   const operationFunc = getOperationFunc(operation);
-  return cons(`${a} ${operationSymbol} ${b}`, `${operationFunc(a, b)}`);
+  const question = `${a} ${operationSymbol} ${b}`;
+  const answer = operationFunc(a, b).toString();
+  return cons(question, answer);
 };
 
 const gameInfo = 'What is the result of the expression?';
