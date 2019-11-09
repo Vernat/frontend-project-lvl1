@@ -3,6 +3,12 @@ import getRandomNumber from '../random';
 import { runBrainGame } from '../engine';
 
 const isPrime = (num) => {
+  if (num <= 1) {
+    return false;
+  }
+  if (num === 2) {
+    return true;
+  }
   const round = Math.sqrt(num);
   let i = 2;
   while (i <= round) {
