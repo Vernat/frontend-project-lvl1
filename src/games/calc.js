@@ -10,8 +10,9 @@ const operations = l(
 );
 const getRandomOperation = () => random(operations);
 
+const maxValue = 30;
+
 const getRoundData = () => {
-  const maxValue = 30;
   const a = getRandomNumber(0, maxValue);
   const b = getRandomNumber(0, maxValue);
   const operation = getRandomOperation();

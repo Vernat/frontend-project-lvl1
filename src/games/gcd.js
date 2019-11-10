@@ -15,8 +15,9 @@ const getGcd = (val1, val2) => {
   return a + b;
 };
 
+const maxValue = 100;
+
 const getRoundData = () => {
-  const maxValue = 100;
   const a = getRandomNumber(0, maxValue);
   const b = getRandomNumber(0, maxValue);
   const question = `${a} ${b}`;

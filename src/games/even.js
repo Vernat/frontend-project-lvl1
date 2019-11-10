@@ -4,8 +4,10 @@ import { runBrainGame } from '../engine';
 
 const isEven = num => num % 2 === 0;
 
+const maxValue = 1000;
+
 const getRoundData = () => {
-  const question = getRandomNumber(0, 1000);
+  const question = getRandomNumber(0, maxValue);
   const correctAnswer = isEven(question) ? 'yes' : 'no';
   return cons(question, correctAnswer);
 };
