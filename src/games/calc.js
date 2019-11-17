@@ -8,18 +8,17 @@ const operations = l(
   cons('-', (a, b) => a - b),
   cons('*', (a, b) => a * b),
 );
-const getRandomOperation = () => random(operations);
 
 const maxValue = 30;
 
 const getRoundData = () => {
   const a = getRandomNumber(0, maxValue);
   const b = getRandomNumber(0, maxValue);
-  const operation = getRandomOperation();
-  const operationSymbol = car(operation);
-  const operationFunc = cdr(operation);
-  const question = `${a} ${operationSymbol} ${b}`;
-  const answer = operationFunc(a, b).toString();
+  const operationData = random(operations);
+  const operator = car(operationData);
+  const operation = cdr(operationData);
+  const question = `${a} ${operator} ${b}`;
+  const answer = operation(a, b).toString();
   return cons(question, answer);
 };
 
