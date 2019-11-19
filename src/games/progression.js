@@ -13,7 +13,7 @@ const getQuestion = (start, stepSize, lengthOfProgression, hiddenElementIndex) =
     }
     const next = start + stepSize * (iterationCounter);
     const questionPart = hiddenElementIndex === iterationCounter ? '..' : `${next}`;
-    return `${questionPart} ${iteration(iterationCounter + 1)}`;
+    return `${questionPart} ${iteration(iterationCounter + 1)}`.trim();
   };
   return iteration(0);
 };
