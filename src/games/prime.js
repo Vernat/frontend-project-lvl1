@@ -9,9 +9,9 @@ const isPrime = (num) => {
   if (num === 2) {
     return true;
   }
-  const round = Math.sqrt(num);
+  const limit = Math.sqrt(num);
   let i = 2;
-  while (i <= round) {
+  while (i <= limit) {
     if (num % i === 0) {
       return false;
     }

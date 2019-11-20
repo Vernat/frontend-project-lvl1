@@ -7,13 +7,13 @@ const progressionLength = 10;
 const maxRandomValue = 20;
 
 const getQuestion = (start, stepSize, lengthOfProgression, hiddenElementIndex) => {
-  const iteration = (iterationCounter) => {
-    if (iterationCounter === lengthOfProgression) {
+  const iteration = (counter) => {
+    if (counter === lengthOfProgression) {
       return '';
     }
-    const next = start + stepSize * (iterationCounter);
-    const questionPart = hiddenElementIndex === iterationCounter ? '..' : `${next}`;
-    return `${questionPart} ${iteration(iterationCounter + 1)}`.trim();
+    const next = start + stepSize * (counter);
+    const questionPart = hiddenElementIndex === counter ? '..' : `${next}`;
+    return `${questionPart} ${iteration(counter + 1)}`.trim();
   };
   return iteration(0);
 };
